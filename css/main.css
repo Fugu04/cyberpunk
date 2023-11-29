@@ -91,3 +91,20 @@ li{
     padding: 19px 25px;
     background: #000;
 }
+
+.night__city{
+
+}
+.night__city--title{
+    font-size: 62px;
+    font-weight: 500;
+}
+
+.night__city--subtitle{
+    font-size: 18px;
+}
+
+.night__city--images{
+    display: grid;
+    grid-template: 1fr  1fr 1fr / 1fr 2fr;
+}
