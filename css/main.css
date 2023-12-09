@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --yellow: #F8F200;
+    --dark-color: #000;
+    --light-color: #fff;
+    --text-color: #777;
+}
+
 a{ 
     text-decoration: none;
 }
@@ -28,6 +35,7 @@ li{
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 150px;
 }
 
@@ -73,11 +81,12 @@ li{
     align-items: flex-end;
 }
 
-.hero--block{
+.hero__info{
     max-width: 624px;
+    margin-top: 537px;
     clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
     padding: 70px;
-    background: #F8F200;
+    background: var(--yellow);
 }
 
 .hero--title{
@@ -86,14 +95,14 @@ li{
 }
 
 .hero--btn{
-    color: #F8F200;
+    color: var(--yellow);
     font-size: 24px;
     padding: 19px 25px;
     background: #000;
 }
 
 .night__city{
-
+    padding: 70px 0;
 }
 .night__city--title{
     font-size: 62px;
@@ -102,25 +111,61 @@ li{
 
 .night__city--subtitle{
     font-size: 18px;
+    padding: 25px 0;
 }
 
 .night__city--images{
+    max-width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 5px;
-    background: #000;
+    justify-content: space-between;
+    gap: 15px;
     
 }
 
 .night__city--left_images{
-    width: 30vw;
+    max-width: 35%;
     display: flex;
-    gap: 32px;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .night__city--big__image{
-    width: 70vw;
+    max-width: 62%;
 }
 
+.night__city--big__image img{
+    max-width: 100%;
+  }
+
+.game{
+    color: var(--light-color);
+    background: var(--dark-color);
+}
+
+.game::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20vh;
+    background: url(../img/before.png) no-repeat;
+
+}
+
+.game__title{
+}
+
+.game__title::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/promotion.svg);
+    background-size: cover;
+}
+
+
+.game__file{
+    padding: 100px 300px;
+    background: var(--dark-color);
+    border: 1px dashed #777777;
+}
