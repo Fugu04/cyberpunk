@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+
+}
+
 :root {
     --yellow: #F8F200;
     --dark-color: #000;
@@ -22,7 +26,7 @@ li{
 .container{
     max-width: 1100px;
     margin: 0 auto;
- 
+    padding: 0 15px;
 }
 
 .main{
@@ -152,6 +156,7 @@ li{
 }
 
 .game__title{
+    font-size: 62px;
 }
 
 .game__title::before{
@@ -164,8 +169,46 @@ li{
 }
 
 
+.game__subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+.game__subtitle span{
+    font-weight: 700;
+    color: #52BEDC;
+}
+
+.game__coll{
+    display: flex;
+}
+
+.game__form{
+    max-width: 460px;
+}
+
+.game__form input{
+    width: 100%;
+    padding: 11px;
+    padding-left: 0;
+    margin-bottom: 15px;
+    background: var(--dark-color);
+    overflow: hidden;
+}
+
 .game__file{
     padding: 100px 300px;
     background: var(--dark-color);
     border: 1px dashed #777777;
+}
+
+.game__btn{
+    color: var(--dark-color);
+    background: var(--yellow);
+    padding: 19px 50px;
+}
+
+.game__images{
+    display: flex;
 }
