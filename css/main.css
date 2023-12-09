@@ -5,7 +5,9 @@
 }
 
 body{
-
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-color);
 }
 
 :root {
@@ -26,7 +28,6 @@ li{
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .main{
@@ -186,6 +187,7 @@ li{
 
 .game__form{
     max-width: 460px;
+    margin-top: 98px;
 }
 
 .game__form input{
@@ -198,17 +200,67 @@ li{
 }
 
 .game__file{
-    padding: 100px 300px;
+    padding: 39px 137px;
     background: var(--dark-color);
     border: 1px dashed #777777;
 }
 
 .game__btn{
     color: var(--dark-color);
+    font-size: 18px;
+    font-weight: 700;
     background: var(--yellow);
+    margin-top: 35px;
     padding: 19px 50px;
 }
 
 .game__images{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.game__images img{
+    width: 50%;
+}
+
+.hp{
+    padding: 70px 0;
+    background: var(--yellow);
+}
+
+.hp__coll{
+    display: flex;
+    gap: 32px;
+}
+
+
+
+.hp__img{
+    max-width: 610px;
+}
+
+.big__img{
+    width: 100%;
+}
+.big__img img {
+    width: 100%;
+}
+
+
+.img__coll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hp__info{
+    max-width: 610px;
+}
+
+.hp__title{
+    font-size: 62px;
+}
+
+.hp__subtitle{
+    font-size: 18px;
 }
