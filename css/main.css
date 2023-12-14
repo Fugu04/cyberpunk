@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+a{ 
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
 body{
     font-size: 18px;
     font-weight: 400;
@@ -17,12 +26,16 @@ body{
     --text-color: #777;
 }
 
-a{ 
-    text-decoration: none;
+
+.btn{
+    color: var(--yellow);
+    padding: 19px 25px;
+    background: #000;
 }
 
-li{
-    list-style: none;
+.blue__text{
+    font-weight: 700;
+    color: #52BEDC;
 }
 
 .container{
@@ -100,10 +113,7 @@ li{
 }
 
 .hero--btn{
-    color: var(--yellow);
     font-size: 24px;
-    padding: 19px 25px;
-    background: #000;
 }
 
 .night__city{
@@ -145,6 +155,7 @@ li{
 .game{
     color: var(--light-color);
     background: var(--dark-color);
+    padding-bottom: 50px;
 }
 
 .game::before{
@@ -174,11 +185,6 @@ li{
     font-size: 18px;
     font-weight: 400;
     margin: 25px 0;
-}
-
-.game__subtitle span{
-    font-weight: 700;
-    color: #52BEDC;
 }
 
 .game__coll{
@@ -259,8 +265,23 @@ li{
 
 .hp__title{
     font-size: 62px;
+    line-height: 60px;
+    margin-bottom: 25px;
 }
 
-.hp__subtitle{
-    font-size: 18px;
+.hp__list{
+    padding: 25px 0;
+}
+
+
+.hp--list__item{
+    margin-bottom: 20px;
+    padding-left: 42px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: contain;
+}   
+
+.buy{
+    display: flex;
 }
