@@ -38,6 +38,14 @@ body{
     color: #52BEDC;
 }
 
+.list__item{
+    margin-bottom: 20px;
+    padding-left: 42px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: contain;
+}   
+
 .container{
     max-width: 1100px;
     margin: 0 auto;
@@ -282,6 +290,103 @@ body{
     background-size: contain;
 }   
 
-.buy{
-    display: flex;
+.buy{  
+    background: var(--dark-color);
+    position: relative;
 }
+
+.buy__left img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    max-width: 944px;
+    object-fit: cover;
+}
+
+.buy__info{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--light-color);
+    padding: 70px 0;
+}
+
+.buy__content{
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 65px;
+    padding-left: 32px;
+}
+
+.buy__info--title{
+    font-size: 62px;
+    margin-bottom: 25px;
+}
+
+.buy__list--title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.buy__list .list__images{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer__logo img{
+    margin-right: 32px;
+}
+
+.menu__link{
+    color: var(--dark-color);
+    font-size: 18px;
+    margin-left: 32px;
+}
+
+.footer__buttom{
+    background: var(--dark-color);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 13px 0;
+    color: var(--light-color);
+}
+
+
+@media screen and (max-width: 900px) {
+    .container{
+        
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .hp__coll{
+        flex-direction: column;
+    }
+
+    .buy__left{
+        width: 30%;
+    }
+    .buy__info{
+        width: 70%;
+    }
+}
+
+
+
